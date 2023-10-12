@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style-homepage.css">
+</head>
+<body id="app">
+    <script>
+        //to append the html to an element simply write:
+        appendHTMLto(document.getElementById("app"));
+
+        function appendHTMLto(element){
+            //Create Elements
+            var element_1 = document.createElement("div");
+            var element_1_1 = document.createElement("header");
+            var element_1_1_1 = document.createElement("div");
+            var element_1_1_1_1 = document.createElement("img");
+            var element_1_1_2 = document.createElement("div");
+            var element_1_1_2_1 = document.createElement("button");
+            var element_1_2 = document.createElement("div");
+            var element_1_2_1 = document.createElement("div");
+            var element_1_2_1_1 = document.createElement("h1");
+            //Create Text Nodes
+            var textNode_1_1_2_1_1 = document.createTextNode("Login");
+            var textNode_1_2_1_1_1 = document.createTextNode("The coolest platform to help plan your adventure 🕺");
+            //Set Attributes
+            element_1.setAttribute("class","maindiv");
+            element_1_1_1.setAttribute("class","box1");
+            element_1_1_1_1.setAttribute("src","./img/np-logo.svg");
+            element_1_1_1_1.setAttribute("alt","");
+            element_1_1_2.setAttribute("class","box2");
+            element_1_1_2_1.setAttribute("id","myBtn");
+            element_1_1_2_1.setAttribute("type","button");
+            element_1_1_2_1.setAttribute("class","loginbutton");
+            element_1_2.setAttribute("class","heading");
+            element_1_2_1.setAttribute("class","box3");
+            //Append Children
+            element.appendChild(element_1);
+            element_1.appendChild(element_1_1);
+            element_1_1.appendChild(element_1_1_1);
+            element_1_1_1.appendChild(element_1_1_1_1);
+            element_1_1.appendChild(element_1_1_2);
+            element_1_1_2.appendChild(element_1_1_2_1);
+            element_1_1_2_1.appendChild(textNode_1_1_2_1_1);
+            element_1.appendChild(element_1_2);
+            element_1_2.appendChild(element_1_2_1);
+            element_1_2_1.appendChild(element_1_2_1_1);
+            element_1_2_1_1.appendChild(textNode_1_2_1_1_1);
+        }
+    </script>
+</body>
+</html>
+<!-- dummy html
+<div class="maindiv"> <header> <div class="box1"><img src="./img/np-logo.svg" alt=""></div> <div class="box2"><button id="myBtn" type="button" class="loginbutton">Login</button></div> </header> <div class="heading"> <div class="box3"><h1>The coolest platform to help plan your adventure 🕺</h1></div> </div> </div> -->
